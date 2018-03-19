@@ -27,7 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+# My settings
+LOGIN_URL = "/users/login"
+BOOTSTRAP3 = {
+    "include_jquery": True,
+}
 # Application definition
 
 INSTALLED_APPS = (
@@ -39,6 +43,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     #My_app
     "learning_logs",
+    "users",
+    "bootstrap3"
 )
 
 MIDDLEWARE_CLASSES = (

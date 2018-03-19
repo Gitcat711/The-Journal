@@ -5,8 +5,18 @@
     <title>Index Page</title>
   </head>
   <body>
+    {% extends "learning_logs/base.html" %}
+    {% block header %}
+      <div class="jumbotron">
+        <h1>Track Your Learning.</h1>
+      </div>
+    {% endblock header %}
     {%block content%}
+    <h2> <a href="{% url "users:register" %}">Register an account</a> to make your learning log, and topics you are learning about are listed </h2>
     <p>Learning Log keeps track of your learning, forr any topic you are learning about.</p>
+    <h2>
+      Everytime you learn something new about a specific topic, make an entry summarizing what you have learned.
+    </h2>
     {%endblock content%}
   </body>
 </html>
